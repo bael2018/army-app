@@ -5,21 +5,16 @@ import KeyHello from './KeyHello'
 import cls from './Letters.module.css'
 
 const Letters = () => {
-
     return (
         <section className={cls.parent}>   
             <div className={cls.parent_container}>
                 <div className={cls.parent_container_header}>
                     <img src="/img/darkLogo.png" alt="logo" />
                 </div>
-
-                {/* Letters inside components */}
-
-                {/* <Hello/> */}
-                {/* <Congrats/> */}
-                {/* <KeyHello/> */}
-                {/* <KeyGrats/> */}
-
+                <Hello/>
+                <Congrats/>
+                <KeyHello/>
+                <KeyGrats/>
                 <div className={cls.parent_container_footer}>
                     <h3>Any questions?</h3>
                     <div className={cls.parent_container_footer_inner}>

@@ -15,11 +15,7 @@ import Letters from '../../components/letters'
 const Content = () => {
     return (
         <section className={cls.content}>
-
-            {/* Letters
-            {/* <Letters/> */}
-            {/* Letters */} 
-            
+            <Letters/>
             <Rules/>
             <Codes/>
             <Switch>

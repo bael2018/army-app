@@ -10,12 +10,10 @@ import Rules from '../../components/Rules'
 import FAQ from '../../components/Help/FAQ'
 import Play from '../../components/Help/Play'
 import Codes from '../../components/UI/Codes'
-import Letters from '../../components/letters'
 
 const Content = () => {
     return (
         <section className={cls.content}>
-            <Letters/>
             <Rules/>
             <Codes/>
             <Switch>

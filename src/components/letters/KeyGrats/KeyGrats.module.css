@@ -1,0 +1,30 @@
+.parent{
+    width: 95%;
+    background: white;
+    margin: 30px auto;
+    box-sizing: border-box;
+    padding: 30px 20px ;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.parent h4{
+    color: #353535;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.parent p{
+    color:#353535;
+    line-height: 1.6;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 420px){
+    
+    .parent p{
+        width: 85%;
+    }
+}

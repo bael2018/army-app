@@ -1,0 +1,28 @@
+
+.logo{
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 181px;
+    height: 31px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .logo img{
+        width: 165px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .logo img{
+        width: 130px;
+        height: 21px;
+    }
+}

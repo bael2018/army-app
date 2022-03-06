@@ -1,0 +1,14 @@
+
+.empty{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty h3{
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+}

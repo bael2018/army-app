@@ -1,0 +1,107 @@
+
+.pick_btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 10px 0;
+    position: relative;
+    width: 140px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.pick_btn:hover::before{
+    background:#003E62;
+}
+
+.pick_btn:active:before{
+    background:#001623;
+}
+
+.pick_btn:active span{
+    color:#494B7D;
+}
+
+.pick_btn_active::before{
+    background: linear-gradient(90deg, #F8D8DD 1.43%, #F2B9F3 53.28%, #CEBEFA 100%) !important;
+}
+
+.pick_btn_active:active:before{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #F9DED9 -6.41%, #F2B6F5 54.8%, #C2C0FC 112.5%) !important;
+}
+
+.pick_btn_active:hover:before{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), linear-gradient(90deg, #F9DED9 -6.41%, #F2B6F5 54.8%, #C2C0FC 112.5%) !important;
+}
+
+.pick_btn_active span{
+    color:#353535 !important;
+}
+
+.pick_btn_active:active span{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.pick_btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: skew(-10deg);
+    height: 100%;
+    background:#002D47;
+    border-radius: 5px;
+    top: 0;
+}
+
+.pick_btn span{
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .pick_btn span{
+        font-size: 16px;
+    }
+    
+    .pick_btn{
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .pick_btn span{
+        font-size: 15px;
+    }
+    
+    .pick_btn{
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .pick_btn span{
+        font-size: 14px;
+    }
+    
+    .pick_btn{
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    
+    .pick_btn span{
+        font-size: 13px;
+    }
+    
+    .pick_btn{
+        width: 95px;
+    }
+}

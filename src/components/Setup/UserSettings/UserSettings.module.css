@@ -1,0 +1,130 @@
+
+.setting{
+    border-radius: 8px;
+    width: 48.5%;
+    box-sizing: border-box;
+    padding: 15px 25px;
+}
+
+/* setting_title */
+
+.setting_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.setting_title img{
+    margin-right: 8px;
+    width: 13px;
+}
+
+.setting_title span{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+/* setting_body */
+
+.setting_body{
+    margin-top: 20px;
+}
+
+/* setting_body_wrapper */
+
+.setting_body_wrapper{
+    width: 100%;
+    border: 1px solid #f6fbfd33;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.spanned{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    position: absolute;
+    pointer-events: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color:#898989;
+    transition: .2s;
+}
+
+.spanned_active{
+    height: 40% !important;
+    top: 10% !important;
+    position: absolute;
+    font-size: 12px;
+    transition: .2s;
+    color:#5158FF;
+}
+
+.setting_body_wrapper input{
+    width: 93%;
+    border: none;
+    outline: none;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    bottom: 0;
+    transition: .2s;
+    background: none;
+}
+
+/* setting_body_warner */
+
+.setting_body_warner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.setting_body_warner span{
+    border-radius: 50px;
+    padding: 1px 6px;
+    background:#5158FF;
+    margin-right: 6px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .payout_body_child_inside{
+        width: 35%;
+    }
+
+    .setting_body_warner{
+        font-size: 9px;
+    }
+
+    .setting{
+        width: 90%;
+        margin-bottom: 30px;
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .setting{
+        width: 100%;
+    }
+}

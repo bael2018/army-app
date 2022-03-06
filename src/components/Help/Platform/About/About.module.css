@@ -1,0 +1,157 @@
+
+.about{
+    width: 65%;
+    background:#032030;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.about_light{
+    background: white;
+    border: 1px solid #D3D3D3;
+}
+
+/* back_btn */
+
+.back_btn{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.about_light .back_btn{
+    color: black;
+}
+
+.back_btn svg{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+/* about_container */
+
+.about_container{
+    width: 100%;
+}
+
+.about_container_header{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about_container_header h3{
+    color: white;
+    line-height: 1.4;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.mobile_title{
+    display: none;
+}
+
+.about_container_light .about_container_body p,
+.about_container_light .about_container_header h3{
+    color: black;
+}
+
+/* .about_container_body */
+
+.about_container_body p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+@media screen and (max-width: 1200px) {
+
+    .about{
+        width: 100%;
+        padding: 20px 35px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .about{
+        padding: 20px 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .about{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .about{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .about_container_header{
+        display: none;
+    }
+
+    .back_btn{
+        top: -170px;
+        left: 0;
+    }
+
+    .about{
+        padding-top: 10px;
+    }
+
+    .mobile_title{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    
+    .mobile_title span{
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        height: 50px;
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 30px;
+        background: linear-gradient(102.59deg, #FF972A 5.41%, #FF7512 95.74%);
+    }
+
+    .mobile_title h3{
+        color: white;
+        margin: 0px;
+        font-size: 27px;
+    }
+
+    .mobile_title_light h3{
+        color: black;
+    }
+}

@@ -1,0 +1,16 @@
+
+.platform{
+    width: 97%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .platform{
+        width: 100%;
+    }
+}

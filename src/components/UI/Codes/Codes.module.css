@@ -1,0 +1,114 @@
+.codes{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: .3s;
+    left: 0;
+    display: flex;
+    z-index: 4;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    justify-content: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.codes_active{
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+.close_btn{
+    position: absolute;
+    right: 15px;
+    color: white;
+    top: 10px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.codes_container{
+    height: 67%;
+    width: 30%;
+    position: relative;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #002134;
+    border-radius: 10px;
+}
+
+.codes_container_light{
+    border: 1px solid #C8C8C8;
+    background: white;
+}
+
+.codes_container_light h3,
+.codes_container_light p{
+    color: black !important;
+}
+
+.codes_container div{
+    height: 25%;
+}
+
+.codes_container h3{
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+.codes_container p{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.codes_container_light div span{
+    color: black;
+}
+
+.codes_container img{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px){
+    
+    .codes_container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    
+    .codes_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    
+    .codes_container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    .codes_container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    
+    .codes_container{
+        width: 90%;
+    }
+}

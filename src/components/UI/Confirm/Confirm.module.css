@@ -1,0 +1,158 @@
+
+
+.confirm{
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.51);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: .3s;
+    z-index: 5;
+    left: 0;
+}
+
+/* confirm_container */
+
+.confirm_container{
+    padding: 20px;
+    background: #002134;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.confirm_container_light{
+    background: white;
+    border: 1px solid #C8C8C8;
+}
+
+.confirm_container_light h3{
+    color: black !important;
+}
+
+/* confirm_container_header */
+
+.confirm_container_header{
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    line-height: 1.6;
+}
+
+.confirm_container_body{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirm_container_body span{
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: #1BC2A4;
+}
+
+.confirm_container_body span img{
+    margin-right: 5px;
+}
+
+.confirm_container_body_image{
+    width: 110px;
+    margin-top: 10px;
+}
+
+/* confirm_container_footer */
+
+.confirm_container_footer{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.confirm_container_footer span{
+    color:#5158FF;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.confirm_container_footer_light span{
+    color: black !important;
+}
+
+.confirm_container_footer button{
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.confirm_container_footer button span{
+    font-weight: 700;
+    color:#5158FF;
+    position: relative;
+    display: inline-block;
+    padding: 10px 45px;
+}
+
+.confirm_container_footer_light button span{
+    color: rgb(44, 44, 44) !important;
+}
+
+.confirm_container_footer button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: skew(-10deg);
+    height: 100%;
+    background:#002D47;
+    border-radius: 5px;
+    top: 0;
+}
+
+.confirm_container_footer_light button::before{
+    background: linear-gradient(90deg, #F8D8DD 1.43%, #F2B9F3 53.28%, #CEBEFA 100%) !important;
+}
+
+.confirm_container_footer button:hover::before{
+    background:#003E62;
+}
+
+.confirm_container_footer_light button:hover:before{
+    opacity: .8 !important;
+}
+
+.confirm_container_footer button:active:before{
+    background:#001623;
+}
+
+.confirm_container_footer_light button:active:before{
+    opacity: 1 !important;
+}
+
+.confirm_container_footer button:active span{
+    color:#494B7D;
+}
+
+@media screen and (max-width: 450px){
+    
+    .confirm_container{
+        width: 80%;
+    }
+}

@@ -1,0 +1,328 @@
+.hero_list{
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.filters{
+    display: none;
+}
+
+/* hero_list_body */
+
+.hero_list_body{
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 5px;
+}
+
+.hero_list::-webkit-scrollbar{
+    width: 5px;
+    background: none;
+}
+
+.hero_list::-webkit-scrollbar-thumb{
+    background: #002D47;
+    border-radius: 50px;
+}
+
+.hero_list_alt::-webkit-scrollbar-thumb{
+    background: rgb(201, 201, 201) !important;
+}
+
+.lightBtn{
+    border: 1px solid #AEAEAE !important;
+    color: black !important;
+    background: white !important;
+}
+
+/* hero_list_body_inner */
+
+.hero_list_body_inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 3px 0;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* hero_list_body_inner_header */
+
+.hero_list_body_inner_header{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.hero_list_body_inner_header span{
+    background: #1BC2A4;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    width: 80px;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.hero_list_body_inner_header span img{
+    margin-right: 4px;
+    width: 15px;
+    margin-top: 0px;
+}
+
+.hero_list_body_inner_header img{
+    width: 65px;
+    margin-top: 5px;
+}
+
+/* hero_list_body_inner_wrapper */
+
+.hero_list_body_inner_wrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_list_body_inner_wrapper_upper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.hero_list_body_inner_wrapper_upper img{
+    width: 37px;
+}
+
+/* hero_list_body_inner_wrapper_lower */
+
+.hero_list_body_inner_wrapper_lower{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero_list_body_inner_wrapper_lower div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.hero_list_body_inner_wrapper_lower_alt div{
+    color: black !important ;
+}
+
+.hero_list_body_inner_wrapper_lower_alt div span{
+    background: #EBEBEB !important;
+}
+
+.hero_list_body_inner_wrapper_lower div span{
+    border-radius: 5px;
+    background:#002D47;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+}
+
+/* hero_list_body_inner_wrapper_footer */
+
+.hero_list_body_inner_wrapper_footer{
+    width: 25%;
+    display: flex;
+    margin-right: 13px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* hero_list_footer */
+
+.hero_list_footer{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero_list_footer button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    justify-content: center;
+    background: #002D47;
+    padding: 4px 5px;
+    font-size: 22px;
+}
+
+.hero_list_footer button:hover{
+    background:#003E62;
+}
+
+.hero_list_footer button:active{
+    background: #00598C;
+}
+
+.hero_list_footer div{
+    margin: 0 15px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero_list_footer div span{
+    border: 1px solid #2A4351;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px 0;
+    width: 40px;
+    display: block;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+
+.hero_list_footer div span input{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    outline: none;
+    color: #e0e0e0;
+    height: 100%;
+    background: none;
+}
+
+.activeBtn{
+    background: #001825 !important;
+    border: 1px solid #002D47 !important;
+    box-sizing: border-box !important;
+    color: #676767 !important;
+    pointer-events: none !important;
+}
+
+.activeBtn_alt{
+    background: #E3E3E3 !important;
+    border: 1px solid #AEAEAE !important;
+    box-sizing: border-box !important;
+}
+
+@media screen and (max-width: 1200px){
+
+    .filters{
+        background: #002D47;
+        border-radius: 5px; 
+        cursor: pointer;
+        padding:  10px 0;
+        color: white;
+        margin-top: 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .filters_light{
+        background: white;
+        border: 1px solid #C8C8C8;
+        color: black;
+    }
+
+    .filters img{
+        margin-right: 7px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .hero_list_body_inner_wrapper{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .hero_list_body_inner_wrapper_upper img{
+        width: 30px;
+    }
+
+    .hero_list_body_inner_header{
+        margin-left: 5px;
+    }
+
+    .hero_list_body_inner_wrapper_lower div{
+        flex-direction: column;
+        margin-right: 15px;
+    }
+
+    .hero_list_body_inner_wrapper_lower{
+        justify-content: flex-start;
+    }
+    
+    .hero_list_body_inner_header span{
+        font-size: 9px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .hero_list_body_inner_wrapper_lower div{
+        font-size: 13px;
+    }
+
+    .hero_list_body_inner_wrapper_upper img{
+        width: 27px;
+    }
+
+    .hero_list_body_inner_wrapper_lower div{
+        margin-right: 10px;
+    }
+
+    .hero_list{
+        width: 95%;
+        margin: 0 auto ;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .hero_list_body_inner_wrapper_lower div{
+        margin-right: 5px;
+    }
+
+    .hero_list_body_inner_wrapper_upper img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .hero_list_body_inner_wrapper_upper img{
+        width: 23px;
+    }
+}

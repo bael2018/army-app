@@ -1,0 +1,50 @@
+
+.btn{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 0;
+}
+
+.btn span{
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn:hover::before{
+    background:#00273C;
+}
+
+.btn:active:before{
+    background:#000A10;
+}
+
+.btn:active span{
+    color:#494B7D;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: skew(-10deg);
+    height: 100%;
+    background:#001825;
+    border-radius: 5px;
+    top: 0;
+}
+
+.btn_active::before{
+    background: linear-gradient(90deg, #F8D8DD 1.43%, #F2B9F3 53.28%, #CEBEFA 100%);
+}
+
+.btn_active:hover:before{
+    background: linear-gradient(90deg, #F8D8DD 1.43%, #F2B9F3 53.28%, #CEBEFA 100%) !important;
+}
